@@ -2,9 +2,9 @@ import { Listener } from "discord-akairo";
 import { MessageReaction } from "discord.js";
 import { guildModel, IEmojiFrequency } from "../models/guildModel";
 
-export default class MessageReactionListeners extends Listener {
+export default class ReactionAddListener extends Listener {
     constructor() {
-        super("reaction", {
+        super("reactionAdd", {
             emitter: "client",
             event: "messageReactionAdd",
         });
