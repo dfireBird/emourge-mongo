@@ -18,8 +18,8 @@ class InitCommand extends Command {
         for (const [_key, emoji] of emojis) {
             guildEmojis.push({
                 emojiId: emoji.id,
-                emojiName: emoji.name,
-                animated: emoji.animated,
+                emojiName: emoji.name ?? "",
+                animated: emoji.animated ?? false,
                 frequency: 0,
             });
         }

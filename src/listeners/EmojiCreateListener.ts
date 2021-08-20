@@ -17,8 +17,8 @@ export default class EmojiCreateListener extends Listener {
 
         guild.emojiFrequency.push({
             emojiId: emoji.id,
-            emojiName: emoji.name,
-            animated: emoji.animated,
+            emojiName: emoji.name ?? "",
+            animated: emoji.animated ?? false,
             frequency: 0,
         });
 

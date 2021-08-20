@@ -25,8 +25,8 @@ class UpdateCommand extends Command {
             } else {
                 return {
                     emojiId: emoji.id,
-                    emojiName: emoji.name,
-                    animated: emoji.animated,
+                    emojiName: emoji.name ?? "",
+                    animated: emoji.animated ?? false,
                     frequency: 0,
                 };
             }

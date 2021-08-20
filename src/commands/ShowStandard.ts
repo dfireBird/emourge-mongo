@@ -76,7 +76,7 @@ class ShowStandardCommand extends Command {
                     );
                 }
 
-                msg.channel.send(embed);
+                msg.channel.send({ embeds: [embed] });
             });
     }
 }

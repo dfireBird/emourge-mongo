@@ -21,7 +21,7 @@ export default class EmojiUpdateListener extends Listener {
         );
 
         if (index > -1) {
-            guild.emojiFrequency[index].emojiName = new_emoji.name;
+            guild.emojiFrequency[index].emojiName = new_emoji.name ?? "";
         }
 
         try {
